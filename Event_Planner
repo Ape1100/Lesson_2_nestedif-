@@ -1,0 +1,18 @@
+#Evebt Planner 
+# Task 1: Correction
+attendees = int (input("Enter number of attendees: ")) 
+venue = "large hall" if attendees > 100 else "conference room"
+print("Recommended venue:", venue)
+
+# Task 2: Venue Selection
+additional_facilities = ""
+if attendees > 100:
+    additional_facilities = " with audio system and projector"
+elif attendees > 50:
+    additional_facilities = " with audio system"
+print("Recommended venue:", venue + additional_facilities)
+
+# Task 3: Catering Choices
+vegetarian_food = input("Do you want vegetarian food? (yes/no) ")
+caterer = "Veggie Delight Caterers" if vegetarian_food.lower() == "yes" else "Gourmet Meals Caterers"
+print("Recommended caterer:", caterer)
